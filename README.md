@@ -39,8 +39,10 @@ To improve model performance and ensure reliable predictions, several preprocess
 * Train-test split: The dataset was divided into training and testing sets to evaluate model performance on unseen data.
 * Encoding categorical variables: Categorical features were transformed into numerical format using dummy (one-hot) encoding.
 * Class imbalance handling: SMOTE (Synthetic Minority Over-sampling Technique) was applied to address class imbalance by generating synthetic samples of the minority class.
-
-# Modelling
+### Feature importances
+total day calls, total eve calls, total night calls, international calls and customer service calls are the most important features in predicting customer churn as shown 
+![alt text](images/image-8.png)
+### Modelling
 Three classification models—Logistic Regression, Decision Tree, and Random Forest—were evaluated to determine the most effective approach for predicting customer churn.
 To ensure fair comparison and prevent data leakage, feature scaling was incorporated within a pipeline and applied consistently during model training and evaluation.
 The bar graph represents the 3 models evaluated. 
