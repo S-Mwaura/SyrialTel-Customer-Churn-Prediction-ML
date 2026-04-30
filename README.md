@@ -51,7 +51,6 @@ The Random Forest model has a higher Area Under the Curve (AUC) and better class
 The metrics is as shown. 
 ![alt text](<images/Models Metrics.png>)
 Based on the provided metrics, the Random Forest Classifier achieved the highest accuracy (91.00%) and F1-score (66.00%). The Decision tree classifier had the highest recall (82.00%), while the Random Forest Classifier achieved the highest precision (58.00%). The Random Forest Classifier is the best-performing model overall and so I selected it as my best model.
-
 ### Conclusion
 The analysis of the dataset indicates that customer churn can be effectively predicted using machine learning models. Of the models evaluated, the Random Forest Classifier is recommended as it shows the strongest overall performance. It achieves a higher ROC curve that closely approaches the top-left corner, reflecting a high AUC (Area Under the Curve) and strong ability to distinguish between churn and non-churn customers.
 Based on these results, it is recommended that Syriatel adopt the Random Forest Classifier as the primary model for churn prediction. This model performs consistently well across key evaluation metrics, including accuracy, F1-score, recall, and precision on the test set, making it a reliable choice for identifying customers who are at risk of leaving.
@@ -60,8 +59,8 @@ Key features influencing customer churn include:
 * Total evening minutes: total duration of evening calls
 * Customer service calls: number of interactions with customer support
 * Total international minutes: total duration of international calls
-
 ### Business recommendations for Syriatel Company
 From a strategic perspective, Syriatel should implement customer retention initiatives that target the key drivers of churn, particularly those related to call usage and pricing. This may include offering personalized discounts or more competitive rates for daytime usage to encourage continued customer engagement and reduce attrition.
 In addition, the company should focus on improving customer service efficiency and satisfaction. Since the number of customer service calls is a significant predictor of churn, reducing the need for repeated or unresolved support interactions could help improve customer experience and retention.
 Overall, by addressing these key factors, Syriatel can reduce churn rates, strengthen customer loyalty, and minimize revenue loss.
+
