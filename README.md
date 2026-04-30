@@ -34,13 +34,15 @@ Exploratory analysis was conducted using univariate, bivariate, and multivariate
 The Churn column was defined as the target variable, while all other variables (excluding the phone number column) were used as predictors.
 
 The distribution of the target variable is shown below:
-![alt text](image-2.png)
+![alt text](images/image-2.png)
 
-Some features exhibited skewed distributions. To address this, appropriate scaling and normalization techniques were applied to reduce skewness and improve data distribution, resulting in more normalized feature distributions as shown below:
-![alt text](image-3.png)
+Some features exhibited skewed distributions as shown below:
+![alt text](images/image-3.png)
+To address this, appropriate scaling and normalization techniques were applied to reduce skewness and improve data distribution, resulting in more normalized feature distributions for data analysis and modelling.
+
 A correlation matrix as shown below shows there is a very low correlation between most features.However, there is a perfect positive correlation between total charge and total minutes at different times. This is expected since the charge of a call depends on the length of the call in minutes.
 total day minutes, total day charge and customer service calls have a weak positive correlation with churn. The other features have a negligible correlation with churn, approximately 0.
-![alt text](image-4.png)
+![alt text](images/image-4.png)
 
 ### Feature Engineering and Data Preprocessing
 
@@ -50,7 +52,7 @@ To improve model performance and ensure reliable predictions, several preprocess
 * Train-test split: The dataset was divided into training and testing sets to evaluate model performance on unseen data.
 * Encoding categorical variables: Categorical features were transformed into numerical format using dummy (one-hot) encoding.
 * Class imbalance handling: SMOTE (Synthetic Minority Over-sampling Technique) was applied to address class imbalance by generating synthetic samples of the minority class as shown below.
-![alt text](image-5.png)
+![alt text](images/image-5.png)
 
 
 # Modelling
@@ -58,14 +60,14 @@ Three classification models—Logistic Regression, Decision Tree, and Random For
 
 To ensure fair comparison and prevent data leakage, feature scaling was incorporated within a pipeline and applied consistently during model training and evaluation.
 The bar graph represents the 3 models evaluated. 
-![alt text](image-6.png)
+![alt text](images/image-6.png)
 
 The ROC Curves and AUC calculations for the different models are also shown are also shown.
-![alt text](image-7.png)
+![alt text](images/image-7.png)
 The Random Forest model has a higher Area Under the Curve (AUC) and better classification performance, making it the most effective model.
 
 The metrics is as shown. 
-![alt text](<Models Metrics.png>)
+![alt text](<images/Models Metrics.png>)
 
 Based on the provided metrics, the Random Forest Classifier achieved the highest accuracy (91.00%) and F1-score (66.00%). The Decision tree classifier had the highest recall (82.00%), while the Random Forest Classifier achieved the highest precision (58.00%). The Random Forest Classifier is the best-performing model overall and so I selected it as my best model.
 
