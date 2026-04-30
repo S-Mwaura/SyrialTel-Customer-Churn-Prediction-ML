@@ -38,8 +38,7 @@ To improve model performance and ensure reliable predictions, several preprocess
 * Multicollinearity handling: Features representing total charges at different times were removed to reduce multicollinearity among predictors.
 * Train-test split: The dataset was divided into training and testing sets to evaluate model performance on unseen data.
 * Encoding categorical variables: Categorical features were transformed into numerical format using dummy (one-hot) encoding.
-* Class imbalance handling: SMOTE (Synthetic Minority Over-sampling Technique) was applied to address class imbalance by generating synthetic samples of the minority class as shown below.
-![alt text](images/image-5.png)
+* Class imbalance handling: SMOTE (Synthetic Minority Over-sampling Technique) was applied to address class imbalance by generating synthetic samples of the minority class.
 
 # Modelling
 Three classification models—Logistic Regression, Decision Tree, and Random Forest—were evaluated to determine the most effective approach for predicting customer churn.
