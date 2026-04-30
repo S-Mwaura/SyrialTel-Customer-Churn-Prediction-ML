@@ -36,9 +36,7 @@ The Churn column was defined as the target variable, while all other variables (
 The distribution of the target variable is shown below:
 ![alt text](images/image-2.png)
 
-Some features exhibited skewed distributions as shown below:
-![alt text](images/image-3.png)
-To address this, appropriate scaling and normalization techniques were applied to reduce skewness and improve data distribution, resulting in more normalized feature distributions for data analysis and modelling.
+Some features exhibited skewed distributions.To address this, appropriate scaling and normalization techniques were applied to reduce skewness and improve data distribution, resulting in more normalized feature distributions for data analysis and modelling.
 
 A correlation matrix as shown below shows there is a very low correlation between most features.However, there is a perfect positive correlation between total charge and total minutes at different times. This is expected since the charge of a call depends on the length of the call in minutes.
 total day minutes, total day charge and customer service calls have a weak positive correlation with churn. The other features have a negligible correlation with churn, approximately 0.
