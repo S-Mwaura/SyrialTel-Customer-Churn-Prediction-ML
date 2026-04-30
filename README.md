@@ -80,8 +80,8 @@ The metrics is as shown.
 ### The Random Forest model was selected as the best-performing model due to:
 - Highest overall accuracy (91%)
 - Strong F1-score (66%)
-- Balanced precision and recall
-- Best ROC-AUC performance
+- Recall of (77%) and Precision (58%)
+- Best ROC-AUC performance with an AUC of 92%
 
 ### Conclusion
 Machine learning models can effectively predict customer churn at SyriaTel. The Random Forest model provides the most reliable predictions and should be used for deployment.
