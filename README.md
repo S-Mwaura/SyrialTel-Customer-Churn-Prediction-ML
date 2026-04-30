@@ -35,15 +35,15 @@ How can SyriaTel identify customers at risk of churn early enough to take preven
 * Feature scaling applied via pipeline
 * Multicollinearity reduced by removing redundant charge-related features
 
-### Exploratory Data Analysis (EDA)
-#### Target
+## Exploratory Data Analysis (EDA)
+### Target
 Churn is used as the Target
 
-#### Key Insights
-* Churn is imbalanced across classes
-* Strong correlation between minutes and charges (expected relationship)
-* Weak correlation between most features and churn as shown:
-![alt text](images/image-4.png)
+### Key Insights
+- Churn is imbalanced across classes
+- Strong correlation between minutes and charges (expected relationship)
+- Weak correlation between most features and churn as shown:
+![Correlation Matrix](images/image-4.png)
 
 Some features have skewed distribution
  - Appropriate scaling and normalization done
@@ -52,7 +52,7 @@ Some features have skewed distribution
    - Customer service calls
    - International usage
 The distribution of the target variable is shown below:
-![alt text](images/image-2.png)
+![Churn Distribution](images/image-2.png)
 
 ### Feature Engineering and Data Preprocessing
 * Removed multicollinear features (charges vs minutes)
@@ -60,19 +60,22 @@ The distribution of the target variable is shown below:
 * Applied SMOTE for class imbalance
 * Standardized numerical features
 
-### Modelling
+## Modelling
 The following models were trained and evaluated:
 - Logistic Regression
 - Decision Tree Classifier
 - Random Forest Classifier
+### Model Comparison
 The bar graph represents the 3 models evaluated. 
-![alt text](images/image-6.png)
+![Model Comparison](images/image-6.png)
 
+### ROC and AUC 
 The ROC Curves and AUC calculations for the different models are also shown.
-![alt text](images/image-7.png)
+![Model ROC Curves](images/image-7.png)
 
+### Metrics
 The metrics is as shown. 
-![alt text](<images/Models Metrics.png>)
+![Metrics](<images/Models Metrics.png>)
 
 ### The Random Forest model was selected as the best-performing model due to:
 - Highest overall accuracy (91%)
