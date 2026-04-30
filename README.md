@@ -1,7 +1,5 @@
 ## Machine Learning Model for Predicting Syriatel Customer Churn
 
-### Author: Stephen Mwaura
-
 ### Project Overview
 This project aims to support SyriaTel in addressing customer churn by developing a classification model that predicts whether a customer is likely to stop doing business with the company in the near future. By accurately predicting customer churn, SyriaTel can take early action to address customer dissatisfaction, implement targeted retention measures, and strengthen customer loyalty. Ultimately, this will help reduce churn rates, improve customer satisfaction, and enhance the company’s competitive position in the market.
 
@@ -17,22 +15,19 @@ profitability in a competitive market.
 ### Objectives:
 1. Identify Churn Patterns, develop a Prediction model and give business recommendations to the Syriatel stakeholder:
 ### Data Understanding
-The Customer Churn in Telecom’s dataset from Kaggle contains information about customer activity and whether or not they canceled their subscription with the Telecom firm. The goal of this dataset is to develop predictive models that can help the telecom business reduce the amount of money lost due to customers who don’t stick around for very long.
+The Customer Churn in Telecom’s dataset is from Kaggle which contains information about customer activity and whether or not they canceled their subscription with the Telecom firm. The goal of this dataset is to develop predictive models that can help the telecom business reduce the amount of money lost due to customers who don’t stick around for very long.
 The dataset contains 3333 entries and 21 columns, including information about the state, account length, area code, phone number, international plan, voice mail plan, number of voice mail messages, total day minutes, total day calls, total day charge, total evening minutes, total evening calls, total evening charge, total night minutes, total night calls, total night charge, total international minutes, total international calls, total international charge, customer service calls and churn.
-
 ### Data preparation.
 The dataset was first inspected for missing values and duplicate records. Categorical variables were then encoded into numerical format to make them suitable for machine learning analysis. No missing or duplicate values were found in the dataset.
-
 * Exploratory Data Analysis (EDA)
 Exploratory analysis was conducted using univariate, bivariate, and multivariate techniques to understand feature distributions and examine relationships between variables, including their correlation with the target variable.
 The Churn column was defined as the target variable, while all other variables (excluding the phone number column) were used as predictors.
 The distribution of the target variable is shown below:
 ![alt text](images/image-2.png)
-Some features exhibited skewed distributions.To address this, appropriate scaling and normalization techniques were applied to reduce skewness and improve data distribution, resulting in more normalized feature distributions for data analysis and modelling.
+To addres skewed distribution of some features, appropriate scaling and normalization techniques were applied resulting in more normalized feature distributions for data analysis and modelling.
 A correlation matrix as shown below shows there is a very low correlation between most features.However, there is a perfect positive correlation between total charge and total minutes at different times. This is expected since the charge of a call depends on the length of the call in minutes.
 total day minutes, total day charge and customer service calls have a weak positive correlation with churn. The other features have a negligible correlation with churn, approximately 0.
 ![alt text](images/image-4.png)
-
 ### Feature Engineering and Data Preprocessing
 To improve model performance and ensure reliable predictions, several preprocessing steps were applied to the dataset.
 * Multicollinearity handling: Features representing total charges at different times were removed to reduce multicollinearity among predictors.
