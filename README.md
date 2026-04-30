@@ -101,11 +101,12 @@ By focusing on key churn drivers, SyriaTel can significantly reduce customer att
 
 - Identify high-risk customers early and offer personalized incentives.
 
-
-
 ### Libraries used
 - Python
 - Pandas, NumPy
 - Scikit-learn
 - Matplotlib, Seaborn
 - SMOTE (imbalanced-learn)
+
+## Author
+### Stephen Mwaura
